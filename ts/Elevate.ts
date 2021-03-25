@@ -9,7 +9,9 @@ import { hideBin } from './hideBin';
 
 const dir = fs.mkdtempSync(`${process.env.TEMP || __dirname}/ElevateTS.`);
 const file = resolve(`${dir}/Elevate.ps1`);
-const fileContents = fs.readFileSync(resolve('./ps/Elevate.min.ps1'));
+const fileContents = fs.readFileSync(
+	resolve(__dirname, '..', 'ps/Elevate.min.ps1')
+);
 
 fs.writeFileSync(file, fileContents);
 

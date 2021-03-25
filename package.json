@@ -15,7 +15,7 @@
 	"scripts": {
 		"test": "node ./js/Test.js",
 		"start": "node ./js/Elevate.js",
-		"build": "tsc .",
+		"build": "tsc --build ./tsconfig.json",
 		"package": "pkg . -t node14-win --output bin/elevate.exe"
 	},
 	"bin": {
