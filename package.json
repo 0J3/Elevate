@@ -7,7 +7,7 @@
 		"pkg": "^4.5.0"
 	},
 	"name": "@norathefurry/elevate",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Elevate whatever you want using `elevate [command]`",
 	"main": "js/Elevate.js",
 	"author": "0J3 <ElevateJS@wafflepowered.com>",
