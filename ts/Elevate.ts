@@ -15,17 +15,23 @@ const fileContents = fs.readFileSync(
 
 fs.writeFileSync(file, fileContents);
 
-console.log(hideBin(process.argv));
-
 const psCommand = `powershell ${file} ${hideBin(process.argv)
 	.join(' ')
 	.split('"')
 	.join('""')}`;
 
-console.log(`Executing: ${psCommand}`);
+// console.log(`Executing: ${psCommand}`);
 
 exec(psCommand, (err, stdout, stderr) => {
-	console.log(`${err ? `${err}\n` : ''}STDOUT: ${stdout}\nSTDERR: ${stderr}`);
+	if (err) {
+		console.error(err);
+	}
+	if (stdout) {
+		console.log(stdout);
+	}
+	if (stderr) {
+		console.error(stderr);
+	}
 
 	if (!err) {
 		fs.unlinkSync(file);
