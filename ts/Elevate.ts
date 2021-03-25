@@ -7,6 +7,8 @@ import * as fs from 'fs';
 import { resolve } from 'path';
 import { hideBin } from './hideBin';
 
+process.title = '<-> ElevateJS <->';
+
 const dir = fs.mkdtempSync(`${process.env.TEMP || __dirname}/ElevateTS.`);
 const file = resolve(`${dir}/Elevate.ps1`);
 const fileContents = fs.readFileSync(
