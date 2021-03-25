@@ -1,0 +1,8 @@
+{
+	"compilerOptions": {
+		"rootDir": "ts",
+		"outDir": "js",
+		"target": "ES5",
+		"moduleResolution": "node"
+	}
+}
