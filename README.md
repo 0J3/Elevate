@@ -4,7 +4,7 @@ A simple tool to run the command passed as an argument as an administrator.
 
 ## Installation
 
-Download [elevate.exe]() and move it into a folder in your PATH.
+Download [elevate.exe](https://github.com/0J3/Elevate/releases/download/1.0.0/elevate.exe) and move it into a folder in your PATH.
 
 ## Building
 
