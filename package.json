@@ -12,6 +12,7 @@
 	"main": "js/Elevate.js",
 	"author": "0J3 <ElevateJS@wafflepowered.com>",
 	"license": "LGPL-3.0-or-later",
+	"repository": "https://github.com/0J3/Elevate.git",
 	"scripts": {
 		"test": "node ./js/Test.js",
 		"start": "node ./js/Elevate.js",
@@ -24,5 +25,6 @@
 	"pkg": {
 		"scripts": "js/*.js",
 		"assets": "ps/*"
-	}
+	},
+	"private": false
 }
